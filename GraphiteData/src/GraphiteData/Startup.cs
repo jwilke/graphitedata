@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using GraphiteData.StructureMap;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Http;
-using Microsoft.AspNet.Routing;
 using Microsoft.Framework.DependencyInjection;
+using StructureMap;
+using StructureMap.Graph;
+using System.Reflection;
 
 namespace GraphiteData
 {
@@ -24,6 +22,20 @@ namespace GraphiteData
             // Uncomment the following line to add Web API services which makes it easier to port Web API 2 controllers.
             // You will also need to add the Microsoft.AspNet.Mvc.WebApiCompatShim package to the 'dependencies' section of project.json.
             // services.AddWebApiConventions();
+
+            var container = new Container();
+            container.Configure(x =>
+            {
+                x.Scan(scanning =>
+                {
+                    scanning.Assembly(Assembly.GetExecutingAssembly());
+                    scanning.TheCallingAssembly();
+                    scanning.WithDefaultConventions();
+                });
+            }
+            );
+
+            container.Populate(services);
         }
 
         // Configure is called after ConfigureServices is called.
