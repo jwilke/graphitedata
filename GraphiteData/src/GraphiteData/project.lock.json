@@ -1024,6 +1024,16 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
+      "structuremap/3.1.6.186": {
+        "compile": {
+          "lib/net40/StructureMap.dll": {},
+          "lib/net40/StructureMap.Net4.dll": {}
+        },
+        "runtime": {
+          "lib/net40/StructureMap.dll": {},
+          "lib/net40/StructureMap.Net4.dll": {}
+        }
+      },
       "System.Collections.Immutable/1.1.36": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
@@ -2029,6 +2039,14 @@
         },
         "runtime": {
           "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll": {}
+        }
+      },
+      "structuremap/3.1.6.186": {
+        "compile": {
+          "lib/portable-net45+win+wp81/StructureMap.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wp81/StructureMap.dll": {}
         }
       },
       "System.Collections/4.0.10-beta-23019": {
@@ -3937,6 +3955,34 @@
         "tools/install.ps1"
       ]
     },
+    "structuremap/3.1.6.186": {
+      "sha512": "PAZm5IbAxOwNOWwprw0kZW9umhn1Cw8SS7NFMZybluqIChaYRwGDWXoAF1tiNsewGNqGR8uzcap/h5mT7ZpTng==",
+      "files": [
+        "structuremap.3.1.6.186.nupkg",
+        "structuremap.3.1.6.186.nupkg.sha512",
+        "structuremap.nuspec",
+        "lib/net40/StructureMap.dll",
+        "lib/net40/StructureMap.Net4.dll",
+        "lib/net40/StructureMap.Net4.pdb",
+        "lib/net40/StructureMap.pdb",
+        "lib/net40/StructureMap.xml",
+        "lib/portable-net4+netcore45+MonoAndroid1+MonoTouch1/StructureMap.dll",
+        "lib/portable-net4+netcore45+MonoAndroid1+MonoTouch1/StructureMap.pdb",
+        "lib/portable-net4+netcore45+MonoAndroid1+MonoTouch1/StructureMap.xml",
+        "lib/portable-net45+win+wp81/StructureMap.dll",
+        "lib/portable-net45+win+wp81/StructureMap.pdb",
+        "lib/portable-net45+win+wp81/StructureMap.xml",
+        "lib/portable-win+net40+wp8/StructureMap.dll",
+        "lib/portable-win+net40+wp8/StructureMap.pdb",
+        "lib/portable-win+net40+wp8/StructureMap.xml",
+        "lib/wp80/StructureMap.dll",
+        "lib/wp80/StructureMap.pdb",
+        "lib/wp80/StructureMap.xml",
+        "lib/wp81/StructureMap.dll",
+        "lib/wp81/StructureMap.pdb",
+        "lib/wp81/StructureMap.xml"
+      ]
+    },
     "System.Collections/4.0.10-beta-23019": {
       "sha512": "76/FZ9wYhhU6wdNwrB3NiVJ5lpLZnLhS3dbLCOXOSf8NN3KXPrlcm5f2PUeHSJxgu5nP2H8lGLfshIaWq2qSNQ==",
       "files": [
@@ -4877,7 +4923,8 @@
       "Microsoft.AspNet.Mvc >= 6.0.0-beta5",
       "Microsoft.AspNet.Server.IIS >= 1.0.0-beta5",
       "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta5",
-      "Microsoft.AspNet.StaticFiles >= 1.0.0-beta5"
+      "Microsoft.AspNet.StaticFiles >= 1.0.0-beta5",
+      "structuremap >= 3.1.6.186"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
